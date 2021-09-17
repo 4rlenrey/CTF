@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>4rlenrey | CTF</title>
+	<title>CTF | 4rlenrey</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 	<meta name="google-site-verification" content="fjaSZNZ6VEagl_q8j_bO5dDOq1c89dibL3DhcDE5czM" />
@@ -23,12 +23,47 @@
 		gtag('js', new Date());
 		gtag('config', 'G-NB7QF94SMN');
 	</script>
+	
+	<script src="welcome.js"></script>
+	<script src="input-colors.js"></script>
 </head>
 
 <body>
-	<div class="flex_row">
-		In works
+	<div class="section_info centered borders_side flex_column">
+		<h1>Available challenges: </h1>
+		<div class="section_info centered ">
+			<a href="ch/obfuscation-1.html" class="link">
+				<h2>Obfuscation-1</h2>
+			</a>
+		</div>
+	</div>
+	<div class="section_info centered borders_side flex_column">
+		<h1>Help & Rules</h1>
+		<div class="section_info centered ">
+			<h2> 0. You are allowed to share flags. </h2>
+			<h2> 1. Bruteforce is for noobs. </h2>
+			<h2> 2. I don't care if you cheat. </h2>
+			<h2>3. Some challenges might use this <b>compare_flag_hashes()</b> function.
+				This is not a part of a challenge. It's just a way to somehow securely check if you've entered correct
+				flags.
+				You can try to break it, but honestly I don't think that it's even possible :p
+				It might be easier to just complete the challenge normally. </h2>
+			<h2>4. There's no logging in possibility. That's because for the moment I can't afford a vps and github
+				pages only support static pages</h2>
+			<h2>5. If you want to contact me about something (That might be job proposition or you want to add some cool
+				challenges. You can do that by writing to me at: 4rlenrey@gmail.com)</h2>
+			<h2>
+				6. If it changes color to white that means that you've solved the challenge.
+			</h2>
+		</div>
+	</div>
+	<div class="section_info centered borders_side flex_column" id="flag_container">
+
+		<h1 id="flag_header">Example of a flag input form:</h1>
+		<div class="section_info centered flex_column">
+			<input type="text" autocomplete="off" placeholder="4rl{_______________________}" id="flag_input">
+			<button id="submit_button" type="submit" onclick="submit_flag()">Submit</button>
+		</div>
 	</div>
 </body>
-
 </html>
