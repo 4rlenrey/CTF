@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CTF | 4rlenrey</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<meta name="google-site-verification" content="fjaSZNZ6VEagl_q8j_bO5dDOq1c89dibL3DhcDE5czM" />
+	<link rel="stylesheet" href="../page.css">
+	<link rel="icon" href="../assets/Logo.jpeg" type="image/x-icon">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NB7QF94SMN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-NB7QF94SMN');
+	</script>
+	<!-- Challenge script -->
+	<script src="steganography-1.js"></script>
+	<script src="../compare_hashes.js"></script>
+	<script src="../input-colors.js"></script>
+</head>
+<body>
+	<div class="section_info centered borders_side flex_column" id="flag_container">
+		<h1 id="flag_header"> Flag: </h1>
+		<div class="section_info centered flex_column">
+			<input type="text" autocomplete="off" placeholder="4rl{_______________________}" id="flag_input">
+			<button id="submit_button" type="submit" onclick="submit_flag()">Submit</button>
+		</div>
+	</div>
+	<div class="section_info centered borders_side flex_column" id="flag_container">
+		<h1>That's all you need:</h1>
+		<img src="../assets/1.png" alt="something does not work" class="my_img">
+	</div>
+	<div class="section_info centered borders_side flex_column" id="flag_container">
+		<a href="../index.html" class="link"><h2>Go back</h2></a>
+	</div>
+</body>
+</html>
